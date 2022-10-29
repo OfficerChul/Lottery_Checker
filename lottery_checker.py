@@ -67,7 +67,8 @@ def check_lotto_numbers(user_xlsx):
         tmp= str(i+1)+"등: "
         for j in rank[i]:
             tmp += str(j)+"번 "
-        tmp+= '\n'
+        # tmp += '\n'
+        tmp += f'({len(rank[i])} 개)\n'
         results.append(tmp)
 
     return results,rank
