@@ -4,7 +4,8 @@
 
 ## <p align="center">🥇 Program Description</p>
 ```
-This program helps you to compare multiples of the lottery number you purchased to this week's target number once and tell you the result.
+This program helps you to compare multiples of the lottery number you 
+purchased to this week's target number once and tell you the result.
 ```
 
 ## <p align="center">⛏️ Demo</p>
