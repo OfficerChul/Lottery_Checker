@@ -1,26 +1,26 @@
 
 
-<p align="center"># ? Lottery_Checker </p>
+# 💰 Lottery_Checker
 
-## ? Program Description
+## 📖 Program Description
 ```
 This program helps you to compare multiples of the lottery number you purchased to this week's target number once and tell you the result.
 ```
 
-## ?? Demo
+## 🖼️ Demo
 <img src='./pictures/1.jpg' width=350px />
 <img src='./pictures/2.jpg' width=270px />
 <img src='./pictures/3.jpg' width=400px />
 
 
-## ? To install library
+## ♎ To install library
 - pyinstaller
 - bs4
 - openpyxl
 - lxml
 - requests
 
-## ? Instruction
+## 🔖 Instruction
 
 
 
@@ -44,7 +44,5 @@ This program helps you to compare multiples of the lottery number you purchased 
 1. Select the excel file that you filled out with lottery numbers
 2. Look at how many jackpots you got!
 
-## ? Cautions In Use
+## ⚡ Cautions In Use
 - You need to make sure that what you wrote on the excel file is 100% correct!!
-
- </p>
