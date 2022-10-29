@@ -1,6 +1,6 @@
-<p align="center">
 
-# ? Lottery_Checker 
+
+<p align="center"># ? Lottery_Checker </p>
 
 ## ? Program Description
 ```
@@ -40,7 +40,7 @@ This program helps you to compare multiples of the lottery number you purchased 
 2. Save the excel file
 
 ### Run the program
-0. Press `∆ƒ¿œ √£±‚` button
+0. Press `√Ü√Ñ√Ä√è √É¬£¬±√¢` button
 1. Select the excel file that you filled out with lottery numbers
 2. Look at how many jackpots you got!
 
