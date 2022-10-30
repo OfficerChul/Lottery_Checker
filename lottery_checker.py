@@ -72,6 +72,7 @@ def check_lotto_numbers(user_xlsx):
         results.append(tmp)
     return results, rank
 
+
 # 파일 추가및 검사
 def add_file():
     txt.delete("1.0", END)
@@ -111,6 +112,7 @@ today.pack(side="top")
 prize_numbers = list(map(int, get_latest_prize_numbers()))  # 최신 로또번호 크롤링
 seq = Label(root)  # 수열 라밸
 seq.pack(side="top")
+
 # [
 start = Label(seq, text="[ ", font=font_style)
 start.pack(side="left")
@@ -124,9 +126,11 @@ for idx in range(0, 6):
 # ]
 end = Label(seq, text=" ]", font=font_style)
 end.pack(side="left")
+
 # 보너스 번호
 bonus_num = Label(seq, text="+ " + str(prize_numbers[6]), font=font_style)
 bonus_num.pack(side="left")
+
 # 절취선
 line = Label(root, text="ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
                         "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
@@ -143,11 +147,13 @@ find_file = Button(fg="#FFFFFF", background="#777777",
 find_file.place(x=30, y=120)
 txt = Text(root, width=80, height=50,font= 13)
 txt.pack(side="top")
+
 # 다시 하기.
 again = Button(fg="#FFFFFF", background="#777777",
                width=7, height=1,
                text="지우개",
                font=font_style, command=replay)
 again.place(x=170, y=120)
+
 # 루프
 root.mainloop()
