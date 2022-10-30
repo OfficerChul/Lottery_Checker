@@ -25,9 +25,9 @@ def get_latest_prize_numbers():
     return seq
 
 
-# 입력받은 로또 번호들 당첨확인.
+# 입력 받은 로또 번호들 당첨확인.
 def check_lotto_numbers(user_xlsx):
-    rank = [[], [], [], [], []]
+    rank = [[], [], [], [], []]   # 1,2,3,4,5등이 각각 몇번 당첨되는지.
     wb = load_workbook(user_xlsx)
     ws = wb.active
     row_max = ws.max_row
@@ -50,28 +50,27 @@ def check_lotto_numbers(user_xlsx):
                     check = True
                     continue
                 same_point += 1
-        if same_point == 6:
+        if same_point == 6:  # 1등
             rank[0].append(func_idx)
-        elif same_point == 5 and check:
-            rank[1].append(func_idx)
-        elif same_point == 5:
+        elif same_point == 5 and check:  # 2등
+            rank[1].append(func_idx)   
+        elif same_point == 5:   # 3등
             rank[2].append(func_idx)
-        elif same_point == 4:
+        elif same_point == 4:   # 4등
             rank[3].append(func_idx)
-        elif same_point == 3:
+        elif same_point == 3:   # 5등
             rank[4].append(func_idx)
         func_idx += 1
 
-    results=[]*6
+    results = []*6
     for i in range(0, 5):
-        tmp= str(i+1)+"등: "
+        tmp = str(i+1)+"등: "
         for j in rank[i]:
             tmp += str(j)+"번 "
         # tmp += '\n'
-        tmp += f'({len(rank[i])} 개)\n'
+        tmp += f'({len(rank[i])} 개)\n'  # 해당 등수가 몇개 당첨되는지.
         results.append(tmp)
-
-    return results,rank
+    return results, rank
 
 # 파일 추가및 검사
 def add_file():
